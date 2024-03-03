@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+      <meta charset="utf-8" />
+      <title>Credit Card</title>
+      <link rel="stylesheet" href="styleCard.css">
+  </head>
+  <body>
+      <div class="container">
+          <div class="title">
+              <h2>credit card detail</h2>              
+          </div>
+          <form action="/order" method="post">
+              <label>Card Number</label>
+              <input type="tel" name="name" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" value="1234 5678 9012 3456">
+              <label>Name On Card</label>
+              <input type="text" name="name" value="Name Surname">
+              <div class="row">
+                  <div class="col-30">
+                      <label>Expiry Date</label>
+                       <input type="number" name="name" min="01" max="12" value="02">
+                  </div>
+                  <div class="col-30">
+                      <label></label> <br>
+                      <input type="number" name="name" value="2017">
+                  </div>
+                  <div class="col-30">
+                      <label>CVV / CVN</label>
+                      <input type="password" class="card-input__input" id="cardCvv" v-mask="***" maxlength="3">
+                  </div>
+              </div>
+          </form>
+      </div>
+  </body>
+</html>
