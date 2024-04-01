@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+      <meta charset="utf-8" />
+      <title>Registration Form</title>
+      <link rel="stylesheet" href="styleRegistration.css">
+  </head>
+  <body>
+      <form>
+          <div class="form_wrapper">
+              <div class="row clearfix">
+                  <div class="col-50">
+                      <h3>Registration form</h3>
+                      <div class="text-field_icon text-field_icon_name">
+                          <input class="text-field_input" type="text" placeholder="Username">
+                      </div>
+                      <div class="text-field_icon text-field_icon_email">
+                          <input class="text-field_input" type="email" placeholder="Email address">
+                      </div>
+                      <div class="col-25">
+                          <div class="text-field_icon text-field_icon_password">
+                              <input class="text-field_input" type="password" placeholder="Password" required />
+                          </div>                                                 <input class="text-field_input" type="password" placeholder="Confirm password" required />             
+                      </div>
+                  </div>
+                  <div class="col-50">
+                      <h3>Personal details</h3>
+                      <div class="col-25">
+                          <input class="text-field_input" type="text" placeholder="First name">  
+                          <input class="text-field_input" type="text" placeholder="Last name">
+                      </div> 
+                      <div class="col-25">
+                          <div class="input_field select_option">
+                              <select id="sex">   
+                                  <option>Male</option>                 <option>Female</option>                  
+                              </select>
+                              <div class="select_arrow"></div>
+                          </div>
+                          <input class="text-field_input" type="text" placeholder="mm/dd/yyyy">    
+                      </div>
+                  </div>
+              </div>              
+          </div>
+          
+          <div class="input-field checkbox_option">
+              <input type="checkbox" id="newsletter">
+              <label for="newsletter">I want to receive mews and special offers</label>
+          </div>
+          <div class="input-field checkbox_option">
+              <input type="checkbox" id="terms">
+              <label for="terms">I agree with the Terms and Conditions</label>
+          </div>  
+          <hr>
+          <input class="button" type="submit" value="submit">   
+      </form>
+  </body>
+</html>
